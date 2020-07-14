@@ -9,10 +9,6 @@ interface HeaderProps {
 
 const Header: FunctionComponent<HeaderProps> = ({
     siteTitle,
-}: HeaderProps): ReactElement => (
-    <header>
-        
-    </header>
-);
+}: HeaderProps): ReactElement => <header></header>;
 
 export default Header;

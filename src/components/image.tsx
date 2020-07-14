@@ -19,10 +19,10 @@ const Image: FunctionComponent = (): ReactElement => {
     const data = useStaticQuery(graphql`
         query {
             placeholderImage: file(
-                relativePath: { eq: "gatsby-astronaut.png" }
+                relativePath: { eq: "roman-bytes.png" }
             ) {
                 childImageSharp {
-                    fluid(maxWidth: 300) {
+                    fluid(maxWidth: 1200) {
                         ...GatsbyImageSharpFluid
                     }
                 }

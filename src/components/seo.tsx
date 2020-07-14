@@ -47,6 +47,10 @@ const SEO: FunctionComponent<SeoProps> = ({
         <Helmet
             htmlAttributes={{
                 lang,
+                class: 'w-full h-full',
+            }}
+            bodyAttributes={{
+                class: 'bg-romanBlack w-full h-full',
             }}
             title={title}
             titleTemplate={`%s | ${site.siteMetadata.title}`}

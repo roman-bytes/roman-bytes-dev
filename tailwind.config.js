@@ -2,8 +2,8 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                romanBlack: '#2B2A29'
-            }
+                romanBlack: '#2B2A29',
+            },
         },
     },
     variants: {},
