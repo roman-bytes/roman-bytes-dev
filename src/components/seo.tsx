@@ -51,8 +51,16 @@ const SEO: FunctionComponent<SeoProps> = ({
             }}
             bodyAttributes={{
                 class: 'bg-romanBlack w-full h-full',
-                style: 'background: url("./dots.png") #1F242B;',
             }}
+            style={[
+                {
+                    cssText: `
+                        body {
+                            background-image: url(./dots.png);
+                        }
+                    `,
+                },
+            ]}
             title={title}
             titleTemplate={`%s | ${site.siteMetadata.title}`}
             meta={[
