@@ -43,7 +43,6 @@ const SEO: FunctionComponent<SeoProps> = ({
 
     const metaDescription = description || site.siteMetadata.description;
 
-    // @ts-ignore
     return (
         <Helmet
             htmlAttributes={{
@@ -52,9 +51,7 @@ const SEO: FunctionComponent<SeoProps> = ({
             }}
             bodyAttributes={{
                 class: 'bg-romanBlack w-full h-full',
-                style: {
-                    background: 'url("./dots.png") #1F242B',
-                },
+                style: 'background: url("./dots.png") #1F242B;',
             }}
             title={title}
             titleTemplate={`%s | ${site.siteMetadata.title}`}
