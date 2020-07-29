@@ -9,7 +9,7 @@ import RomanTerminal from '../components/terminal';
 const IndexPage: FunctionComponent = (): ReactElement => (
     <Layout>
         <SEO title="Projects" />
-
+        <h1>Projects</h1>
     </Layout>
 );
 

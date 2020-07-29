@@ -28,6 +28,12 @@ module.exports = {
             ],
         },
         extend: {
+            width: {
+                '800': '50rem',
+            },
+            height: {
+                '460': '28.75rem',
+            },
             inset: {
                 '1/2': '50%',
                 '5': '5rem',
@@ -43,7 +49,6 @@ module.exports = {
             },
             translate: {
                 '1/2': '50%',
-                '-1/2': '-50%',
             },
         },
     },
