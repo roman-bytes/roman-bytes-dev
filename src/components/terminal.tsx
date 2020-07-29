@@ -28,7 +28,7 @@ const RomanTerminal: FunctionComponent = (): ReactElement => {
             </span>
         ),
         "roman.experience()": () => {
-            const experience = ((new Date() - new Date("2014-10-01")) / 1000 / 60 / 60 / 24 / 365).toFixed(1)
+            const experience: string = ((new Date()> - new Date("2014-10-01")) / 1000 / 60 / 60 / 24 / 365).toFixed(1)
             return `${experience} years`
         },
     };

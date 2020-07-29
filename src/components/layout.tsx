@@ -41,7 +41,9 @@ const Layout: FunctionComponent<LayoutProps> = ({
             <Header siteTitle={data.site.siteMetadata.title} />
             <Logo />
             <div className="container mx-auto flex items-center justify-center h-full w-full">
-                <main className="w-full h-full flex items-center justify-center">{children}</main>
+                <main className="w-full h-full flex items-center justify-center">
+                    {children}
+                </main>
             </div>
             <div className="w-full fixed text-romanText p-20 flex justify-between items-end bottom-0 left-0 right-0">
                 <Social />
