@@ -4,11 +4,11 @@ import { FunctionComponent } from 'react';
 import { ReactElement } from 'react';
 
 const Social: FunctionComponent = (): ReactElement => (
-    <ul>
+    <ul className="social">
         <li>
             <Link
                 to="https://twitter.com/romanbytes"
-                className="hover:text-white"
+                className="hover:text-white relative"
             >
                 Twitter
             </Link>
@@ -16,7 +16,7 @@ const Social: FunctionComponent = (): ReactElement => (
         <li>
             <Link
                 to="https://github.com/roman-bytes"
-                className="hover:text-white"
+                className="hover:text-white relative"
             >
                 Github
             </Link>
@@ -24,7 +24,7 @@ const Social: FunctionComponent = (): ReactElement => (
         <li>
             <Link
                 to="https://codepen.io/romanbytes"
-                className="hover:text-white"
+                className="hover:text-white relative"
             >
                 CodePen
             </Link>
@@ -32,7 +32,7 @@ const Social: FunctionComponent = (): ReactElement => (
         <li>
             <Link
                 to="https://dev.to/romanbytes"
-                className="hover:text-white"
+                className="hover:text-white relative"
             >
                 Dev.to
             </Link>

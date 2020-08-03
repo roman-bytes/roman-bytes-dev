@@ -4,24 +4,24 @@ import { FunctionComponent } from 'react';
 import { ReactElement } from 'react';
 
 const Nav: FunctionComponent = (): ReactElement => (
-    <ul className="text-right">
+    <ul className="text-right nav">
         <li>
-            <Link to="/" className="hover:text-white">
+            <Link to="/" className="hover:text-white relative">
                 Index
             </Link>
         </li>
         <li>
-            <Link to="/projects" className="hover:text-white">
+            <Link to="/projects" className="hover:text-white relative">
                 Projects
             </Link>
         </li>
         <li>
-            <Link to="/profile" className="hover:text-white">
+            <Link to="/profile" className="hover:text-white relative">
                 Profile
             </Link>
         </li>
         <li>
-            <Link to="/blog" className="hover:text-white">
+            <Link to="/blog" className="hover:text-white relative">
                 Blog
             </Link>
         </li>

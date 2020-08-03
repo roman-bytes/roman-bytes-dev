@@ -56,7 +56,7 @@ const SEO: FunctionComponent<SeoProps> = ({
                 {
                     cssText: `
                         body {
-                            background-image: url(./dots.png);
+                            background-image: url(/dots.png);
                         }
                     `,
                 },
