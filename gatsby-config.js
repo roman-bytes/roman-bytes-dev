@@ -31,6 +31,40 @@ module.exports = {
         },
         `gatsby-plugin-typescript`,
         `gatsby-plugin-postcss`,
+        {
+            resolve: `gatsby-source-github-api`,
+            options: {
+                token: 'd2cbb99f01c714656c2e9b34bdd32b630a2193da',
+                graphQLQuery: `
+                   query ($author: String = "", $userFirst: Int = 0) {
+                      user(login: $author) {
+                        repositories(orderBy: {field: NAME, direction: DESC}, first: $userFirst) {
+                          edges {
+                            node {
+                              name
+                              isPrivate
+                              url
+                              id
+                              repositoryTopics(first: 10) {
+                                edges {
+                                  node {
+                                    topic {
+                                      name
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }`,
+                variables: {
+                    author: 'roman-bytes',
+                    userFirst: 77,
+                },
+            },
+        },
         // this (optional) plugin enables Progressive Web App + Offline functionality
         // To learn more, visit: https://gatsby.dev/offline
         // `gatsby-plugin-offline`,
