@@ -34,7 +34,7 @@ module.exports = {
         {
             resolve: `gatsby-source-github-api`,
             options: {
-                token: 'd2cbb99f01c714656c2e9b34bdd32b630a2193da',
+                token: '3387d2747808a0a1ff5c838196e63040537a1b0b',
                 graphQLQuery: `
                    query ($author: String = "", $userFirst: Int = 0) {
                       user(login: $author) {
