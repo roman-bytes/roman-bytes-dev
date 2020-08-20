@@ -1,5 +1,9 @@
 require('ts-node').register({ files: true });
 
+require("dotenv").config({
+    path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
     siteMetadata: {
         title: `Roman Bytes developer`,
@@ -34,7 +38,7 @@ module.exports = {
         {
             resolve: `gatsby-source-github-api`,
             options: {
-                token: '3387d2747808a0a1ff5c838196e63040537a1b0b',
+                token: process.env.GITHUB_TOKEN,
                 graphQLQuery: `
                    query ($author: String = "", $userFirst: Int = 0) {
                       user(login: $author) {
