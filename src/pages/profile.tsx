@@ -5,10 +5,11 @@ import { ReactElement } from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
+
 const ProfilePage: FunctionComponent = (): ReactElement => (
     <Layout>
         <SEO title="Profile Page" />
-        <div className="flex flex-col bg-romanBlack border border-white w-full overflow-hidden xl:my-2 xl:px-2">
+        <div className="flex flex-col bg-romanBlack border border-white w-3/4 overflow-hidden xl:my-2 xl:px-2">
             <div className="flex flex-no-wrap xl:-mx-2 overflow-hidden mt-4 text-white">
                 <img className="w-full" src="/about-jacob-roman.png" />
                 <div className="font-sans leading-normal">
