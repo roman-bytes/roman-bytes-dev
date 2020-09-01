@@ -54,7 +54,6 @@ const ProjectsPage: FunctionComponent = ({ data }): ReactElement => {
             return repo.node.repositoryTopics.edges[0].node.topic.name === 'portfolio';
         }
     );
-    console.log('portfolioRepos', portfolioRepos);
 
     const repoTiles = portfolioRepos.map((repo) => {
         return (
@@ -87,7 +86,7 @@ const ProjectsPage: FunctionComponent = ({ data }): ReactElement => {
     return (
         <Layout>
             <SEO title="Projects" />
-            <div className="flex flex-col">
+            <div className="container flex flex-col">
                 <h1 className="text-4xl text-white">Projects</h1>
                 <div className="flex flex-wrap xl:-mx-2 overflow-hidden mt-4 text-white">
                     {repoTiles}

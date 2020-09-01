@@ -20,11 +20,6 @@ const Nav: FunctionComponent = (): ReactElement => (
                 About
             </Link>
         </li>
-        <li>
-            <Link to="/blog" className="hover:text-white relative">
-                Blog
-            </Link>
-        </li>
     </ul>
 );
 
