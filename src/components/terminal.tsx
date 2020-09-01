@@ -13,21 +13,21 @@ const RomanTerminal: FunctionComponent = (): ReactElement => {
                 <span>Commands:</span><br/><br/>
 
                 <span>VARIABLES</span><br/>
-                <span style={{ marginLeft: "20px" }}><strong>roman.about</strong> -- know more about me</span><br/>
-                <span style={{ marginLeft: "20px" }}><strong>roman.resume</strong> -- want to have a look at my resume?</span><br/><br/>
+                <span style={{ marginLeft: "20px" }}><strong>about</strong> -- know more about me</span><br/>
+                <span style={{ marginLeft: "20px" }}><strong>resume</strong> -- want to have a look at my resume?</span><br/><br/>
 
                 <span>FUNCTIONS</span><br/>
-                <span style={{ marginLeft: "20px" }}><strong>roman.experience()</strong> -> float</span><br/>
+                <span style={{ marginLeft: "20px" }}><strong>experience()</strong> -> float</span><br/>
                 <span style={{ marginLeft: "40px" }}>returns the total years of working experience</span><br/>
             </span>
         ),
-        "roman.about": "My name is Jacob Roman and I like to do cool things",
-        "roman.resume": (
+        "about": "Javascript Developer, Accessibility Advocate, and Team player. I am always seeking opportunities to learn and grow. I am a simple guy who loves all things tech and a good cup of coffee. Nice to meet you.",
+        "resume": (
             <span>
                 <a target="_blank" aria-label="Resume" rel="noreferrer" href="public/static/resume.pdf">resume.pdf</a>
             </span>
         ),
-        "roman.experience()": () => {
+        "experience()": () => {
             const experience: string = ((new Date()> - new Date("2014-10-01")) / 1000 / 60 / 60 / 24 / 365).toFixed(1)
             return `${experience} years`
         },

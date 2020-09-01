@@ -7,6 +7,7 @@ const Social: FunctionComponent = (): ReactElement => (
     <ul className="social">
         <li>
             <Link
+                target="_blank"
                 to="https://twitter.com/romanbytes"
                 className="hover:text-white relative"
             >
@@ -15,6 +16,7 @@ const Social: FunctionComponent = (): ReactElement => (
         </li>
         <li>
             <Link
+                target="_blank"
                 to="https://github.com/roman-bytes"
                 className="hover:text-white relative"
             >
@@ -23,6 +25,7 @@ const Social: FunctionComponent = (): ReactElement => (
         </li>
         <li>
             <Link
+                target="_blank"
                 to="https://codepen.io/romanbytes"
                 className="hover:text-white relative"
             >
@@ -31,6 +34,7 @@ const Social: FunctionComponent = (): ReactElement => (
         </li>
         <li>
             <Link
+                target="_blank"
                 to="https://dev.to/romanbytes"
                 className="hover:text-white relative"
             >

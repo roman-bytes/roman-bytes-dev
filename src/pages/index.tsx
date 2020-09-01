@@ -1,7 +1,4 @@
-import React from 'react';
-import { FunctionComponent } from 'react';
-import { ReactElement } from 'react';
-
+import React, { FunctionComponent, ReactElement } from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import RomanTerminal from '../components/terminal';

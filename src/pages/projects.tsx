@@ -42,7 +42,7 @@ export const query = graphql`
     }
 `;
 
-const IndexPage: FunctionComponent = ({ data }): ReactElement => {
+const ProjectsPage: FunctionComponent = ({ data }): ReactElement => {
     const { nodes } = data.allGithubData;
     const user = nodes[0].data.user;
     const { repositories } = user;
@@ -97,4 +97,4 @@ const IndexPage: FunctionComponent = ({ data }): ReactElement => {
     );
 };
 
-export default IndexPage;
+export default ProjectsPage;

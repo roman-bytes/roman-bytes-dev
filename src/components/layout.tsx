@@ -12,7 +12,6 @@ import { ReactElement } from 'react';
 import { ReactNode } from 'react';
 import { TerminalContextProvider } from "react-terminal";
 
-import Header from './header';
 import Footer from './footer';
 import Social from './social';
 import Nav from './nav';
@@ -38,9 +37,8 @@ const Layout: FunctionComponent<LayoutProps> = ({
 
     return (
         <TerminalContextProvider>
-            <Header siteTitle={data.site.siteMetadata.title} />
             <Logo />
-            <div className="container mx-auto flex items-center justify-center h-full w-full">
+            <div className="flex items-center justify-center h-full w-full">
                 <main className="w-full h-full flex items-center justify-center">
                     {children}
                 </main>
