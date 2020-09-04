@@ -43,7 +43,7 @@ const RomanTerminal: FunctionComponent = (): ReactElement => {
             </span>
         ),
         contact: (
-            <span>follow me on twitter or <Link to="/contact" className="underline text-romanPrimary">send me an email</Link></span>
+            <span>follow me on <Link to="https://twitter.com/romanbytes" target="_blank">twitter</Link> or <Link to="/contact" className="underline text-romanPrimary">send me an email</Link></span>
         ),
         about:
             'Javascript Developer, Accessibility Advocate, and Team player. I am always seeking opportunities to learn and grow. I am a simple guy who loves all things tech and a good cup of coffee. Nice to meet you.',
