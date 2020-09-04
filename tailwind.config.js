@@ -37,6 +37,7 @@ module.exports = {
             },
             inset: {
                 '1/2': '50%',
+                '2.5': '2.5rem',
                 '5': '5rem',
             },
             colors: {
@@ -56,10 +57,17 @@ module.exports = {
             },
         },
         screens: {
-            'sm': {'min': '640px', 'max': '767px'},
-            'md': {'min': '768px', 'max': '1023px'},
-            'lg': {'min': '1024px', 'max': '1279px'},
-            'xl': {'min': '1280px'},
+            sm: '640px',
+            // => @media (min-width: 640px) { ... }
+
+            md: '768px',
+            // => @media (min-width: 768px) { ... }
+
+            lg: '1024px',
+            // => @media (min-width: 1024px) { ... }
+
+            xl: '1280px',
+            // => @media (min-width: 1280px) { ... }
         },
     },
     variants: {},

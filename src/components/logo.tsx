@@ -11,7 +11,6 @@ const Logo: FunctionComponent = (): ReactElement => (
             viewBox="0 0 57 46"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="top-5 left-5 absolute"
         >
             <path
                 fillRule="evenodd"

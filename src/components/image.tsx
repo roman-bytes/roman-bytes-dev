@@ -18,9 +18,7 @@ import { ReactElement } from 'react';
 const Image: FunctionComponent = (): ReactElement => {
     const data = useStaticQuery(graphql`
         query {
-            placeholderImage: file(
-                relativePath: { eq: "roman-bytes.png" }
-            ) {
+            placeholderImage: file(relativePath: { eq: "roman-bytes.png" }) {
                 childImageSharp {
                     fluid(maxWidth: 1200) {
                         ...GatsbyImageSharpFluid

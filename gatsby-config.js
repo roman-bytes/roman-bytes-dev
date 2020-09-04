@@ -1,6 +1,6 @@
 require('ts-node').register({ files: true });
 
-require("dotenv").config({
+require('dotenv').config({
     path: `.env.${process.env.NODE_ENV}`,
 });
 
@@ -72,8 +72,8 @@ module.exports = {
         {
             resolve: `gatsby-source-dev`,
             options: {
-                username: 'romanbytes'
-            }
+                username: 'romanbytes',
+            },
         },
         // this (optional) plugin enables Progressive Web App + Offline functionality
         // To learn more, visit: https://gatsby.dev/offline
