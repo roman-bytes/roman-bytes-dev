@@ -5,7 +5,7 @@ import SEO from '../components/seo';
 const AboutPage: FunctionComponent = (): ReactElement => (
     <Layout>
         <SEO title="Roman Bytes - Full Stack Developer" />
-        <div className="xl:w-full lg:w-3/4 text-md leading-8 font-sans p-8 text-white border border-white bg-romanBlack">
+        <div className="mb-20 lg:mb-0 xl:w-full lg:w-3/4 text-md leading-8 font-sans p-8 text-white lg:border border-white bg-romanBlack">
             <h1 className="font-mono text-2xl mb-3">Hi! I'm Jacob Roman</h1>
             <p>
                 I am full-stack developer that has a strong background with the

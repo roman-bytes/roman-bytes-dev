@@ -9,7 +9,9 @@ const Footer: FunctionComponent = (): ReactElement => (
             Made with love from Michigan.
         </div>
         <div className="absolute xl:right-5 lg:right-2.5 text-sm origin-center transform rotate-90 translate-x-1/2">
-            Source Code
+            <Link to="https://github.com/roman-bytes/roman-bytes-dev">
+                Source Code
+            </Link>
         </div>
     </footer>
 );

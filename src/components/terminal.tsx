@@ -62,8 +62,8 @@ const RomanTerminal: FunctionComponent = (): ReactElement => {
             </span>
         ),
         'experience()': () => {
-            const experience: string = (
-                (new Date() > -new Date('2014-10-01')) /
+            const difDate = new Date() - new Date('2010-10-01');
+            const experience: string = (difDate /
                 1000 /
                 60 /
                 60 /
