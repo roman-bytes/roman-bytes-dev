@@ -15,9 +15,9 @@ const AboutPage: FunctionComponent = (): ReactElement => (
                 ended up taking a Graphic Design class and loved it, so I went
                 to Spring Arbor University and got a Bachelor of Fine Arts with
                 a focus on Graphic Design. During my time in college I fell in
-                love with coding and realized that stuff that I could design, I
-                could also build in code. Thus began my journey to learn
-                everything I know about coding to this day.
+                love with coding and realized that stuff I designed, I could
+                also build in code. Thus began my journey to learn everything I
+                I know about coding to this day.
             </p>
             <p>
                 I have written code for Steel Fish Design, Traffic Digital
