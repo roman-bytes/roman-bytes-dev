@@ -11,6 +11,7 @@ module.exports = {
         author: `Jacob Roman`,
     },
     plugins: [
+        `gatsby-transformer-remark`,
         `gatsby-plugin-react-helmet`,
         {
             resolve: `gatsby-source-filesystem`,

@@ -41,13 +41,13 @@ module.exports = {
                 '5': '5rem',
             },
             colors: {
-                romanPrimary: '#D59945',
+                romanPrimary: '#DBA861',
                 romanBrown: '#815E4A',
                 romanBlack: '#1F242B',
                 romanGrey: '#2B2A29',
-                romanYellow: '#BE8523',
+                romanYellow: '#DBA861',
                 romanWhite: '#F5F5F5',
-                romanText: 'rgba(245, 245, 245, 0.40)',
+                romanText: '#BABABA',
             },
             translate: {
                 '1/2': '50%',

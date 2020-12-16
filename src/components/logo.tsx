@@ -4,7 +4,7 @@ import { FunctionComponent } from 'react';
 import { ReactElement } from 'react';
 
 const Logo: FunctionComponent = (): ReactElement => (
-    <Link to="/">
+    <Link to="/" aria-label="Go back to home page">
         <svg
             width={57}
             height={46}
