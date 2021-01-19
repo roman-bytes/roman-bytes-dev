@@ -9,7 +9,7 @@ const IndexPage: FunctionComponent = (): ReactElement => (
         <h1 className="font-sans text-white left-2.5 lg:right-2.5 xl:right-5 absolute top-2.5 xl:top-5 text-2xl text-left lg:text-right">
             Hello, I am Jacob Roman, a{' '}
             <span className="text-romanYellow line-through"> designer </span>
-            <br /> full stack developer based in Michigan.
+            <br /> front-end developer based in Michigan.
         </h1>
         <RomanTerminal />
     </Layout>
