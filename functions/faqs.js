@@ -14,7 +14,9 @@ exports.handler = function(event, context, callback) {
     }]
     callback(null, {
         headers: {
-            "Access-Control-Allow-Origin": "*"
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET, HEAD, POST, OPTIONS",
+            "Access-Control-Allow-Headers": "*",
         },
         statusCode: 200,
         body: faqs
