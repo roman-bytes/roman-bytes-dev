@@ -1,16 +1,16 @@
 exports.handler = function(event, context, callback) {
     const faqs = [{
-        question: 'Is this product waterproof?',
-        answer: 'Yes. You can take this anywhere and put it in any type of liquid.'
-    }, {
-        question: 'Is this product windproof?',
-        answer: 'Yes. You can withstand winds up to 200mph'
-    }, {
-        question: 'Will this product make you fly?',
-        answer: 'No. This is not Redbull and will not give you wings.'
+        question: 'Did you hear about the mermaid who liked math?',
+        answer: 'She wore an algae bra.'
     }, {
         question: 'Do they allow loud laughing in Hawaii?',
-        answer: 'No. Just a low ha.'
+        answer: 'No just a low ha.'
+    }, {
+        question: 'What do you say to warn your family you\'re about to test a new dad joke on them?',
+        answer: 'Try this on for sighs.'
+    }, {
+        question: 'Whats the leading cause of dry skin?',
+        answer: 'Towels.'
     }];
     callback(null, {
         headers: {
