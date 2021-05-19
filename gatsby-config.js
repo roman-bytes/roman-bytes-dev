@@ -36,7 +36,7 @@ module.exports = {
                 start_url: `/`,
                 background_color: `#1F242B`,
                 theme_color: `#DBA861`,
-                display: `minimal-ui`,
+                display: `standalone`,
                 icon: `src/images/roman-bytes-logo.png`, // This path is relative to the root of the site.
             },
         },
