@@ -105,7 +105,9 @@ const ProjectsPage: FunctionComponent = ({ data }): ReactElement => {
         <Layout>
             <SEO title="Projects" />
             <div className="container flex flex-col">
-                <h1 className="text-4xl text-white p-4 border-b border-white">Projects</h1>
+                <h1 className="text-4xl text-white p-4 border-b border-white">
+                    Projects
+                </h1>
                 <div className="flex flex-wrap p-4 xl:-mx-2 overflow-hidden lg:mt-4 text-white mb-20">
                     {repoTiles}
                 </div>
