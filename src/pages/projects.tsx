@@ -4,10 +4,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 interface RepoData {
-    id: string;
-    isPrivate: boolean;
-    name: string;
-    url: string;
+    data?: any;
 }
 
 export const query = graphql`
@@ -42,7 +39,9 @@ export const query = graphql`
     }
 `;
 
-const ProjectsPage: FunctionComponent = ({ data }): ReactElement => {
+const ProjectsPage: FunctionComponent<RepoData> = ({
+    data,
+}: RepoData): ReactElement => {
     const { nodes } = data.allGithubData;
     const user = nodes[0].data.user;
     const { repositories } = user;
