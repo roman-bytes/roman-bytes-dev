@@ -1,15 +1,5 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
-import React from 'react';
+import React, { FunctionComponent, ReactElement } from 'react';
 import { Helmet } from 'react-helmet';
-import { useStaticQuery, graphql } from 'gatsby';
-import { FunctionComponent } from 'react';
-import { ReactElement } from 'react';
 
 interface Meta {
     name: string;
@@ -17,31 +7,20 @@ interface Meta {
 }
 
 interface SeoProps {
-    description?: string;
     lang?: string;
     meta?: Meta[];
-    title: string;
 }
 
 const SEO: FunctionComponent<SeoProps> = ({
-    description = '',
     lang = 'en',
     meta = [],
-    title,
 }: SeoProps): ReactElement => {
-    const { site } = useStaticQuery(graphql`
-        query {
-            site {
-                siteMetadata {
-                    title
-                    description
-                    author
-                }
-            }
-        }
-    `);
+    const title = 'Roman Bytes developer';
+    const description =
+        'Roman Bytes is a developer website to host all sorts of projects I am working on. My name is Jacob Roman and I am a full stack developer with a passion for the front-end and UI Design.';
+    const author = 'Jacob Roman';
 
-    const metaDescription = description || site.siteMetadata.description;
+    const metaDescription = description;
 
     return (
         <Helmet
@@ -62,7 +41,7 @@ const SEO: FunctionComponent<SeoProps> = ({
                 },
             ]}
             title={title}
-            titleTemplate={`%s | ${site.siteMetadata.title}`}
+            titleTemplate={`%s | ${title}`}
             meta={[
                 {
                     name: `description`,
@@ -86,7 +65,7 @@ const SEO: FunctionComponent<SeoProps> = ({
                 },
                 {
                     name: `twitter:creator`,
-                    content: site.siteMetadata.author,
+                    content: author,
                 },
                 {
                     name: `twitter:title`,

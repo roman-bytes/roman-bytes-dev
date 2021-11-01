@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
-import { useStaticQuery, graphql, Link } from 'gatsby';
-import { FunctionComponent } from 'react';
-import { ReactElement } from 'react';
-import { ReactNode } from 'react';
+import React, {
+    useState,
+    FunctionComponent,
+    ReactElement,
+    ReactNode,
+} from 'react';
+import { Link } from 'gatsby';
 import classNames from 'classnames';
 import { TerminalContextProvider } from 'react-terminal';
 
@@ -24,16 +26,6 @@ const Layout: FunctionComponent<LayoutProps> = ({
     const handleMenuOpen = () => {
         setMobileMenu(!mobileMenu);
     };
-
-    const data = useStaticQuery(graphql`
-        query SiteTitleQuery {
-            site {
-                siteMetadata {
-                    title
-                }
-            }
-        }
-    `);
 
     const mobileMenuClass = classNames(
         'justify-between my-5',
