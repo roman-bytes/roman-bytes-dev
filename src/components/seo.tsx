@@ -9,13 +9,14 @@ interface Meta {
 interface SeoProps {
     lang?: string;
     meta?: Meta[];
+    title?: string;
 }
 
 const SEO: FunctionComponent<SeoProps> = ({
     lang = 'en',
     meta = [],
+    title,
 }: SeoProps): ReactElement => {
-    const title = 'Roman Bytes developer';
     const description =
         'Roman Bytes is a developer website to host all sorts of projects I am working on. My name is Jacob Roman and I am a full stack developer with a passion for the front-end and UI Design.';
     const author = 'Jacob Roman';
