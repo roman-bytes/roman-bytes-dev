@@ -20,7 +20,7 @@
     "gatsby-source-dev": "^0.1.4",
     "gatsby-source-filesystem": "^2.3.23",
     "gatsby-source-github-api": "^0.2.1",
-    "gatsby-transformer-remark": "^2.14.0",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.5.11",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
